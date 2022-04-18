@@ -12,6 +12,8 @@
     
     <!--Plugin scripts:-->
      <script src="leaflet-timeline-slider.min.js"></script>
+	<script src="javascripts/leaflet.timeline.js"></script>
+    <script src="javascripts/moment.min.js"></script> 
     
     <style>
         
@@ -195,7 +197,7 @@
         
     //This bit creates the timeline slider, sets its variables, and adds it to the map. Uses the moment plugin to parse dates.
         
-    var slider = L.timelineSliderControl({
+    var slider = L.timeLineSlider({
         formatOutput: function(date){
         return moment(date).format("YYYY");
         }, position: "bottomleft",
