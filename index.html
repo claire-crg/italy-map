@@ -211,7 +211,7 @@
         
     var urbTimeline = L.timeline(urb, {    
         pointToLayer: function(feature,latlng) {
-            return L.marker(latlng, {
+            return L.circleMarker(latlng, {
         
                 //divIcon lets the markers be defined by the CSS properties above. Useful for using CSS styling & animations. className refers to the CSS class where the style is defined. Other variables defined here (iconSize) take effect after animations complete.
                 
@@ -221,8 +221,8 @@
                  fillColor: '#B687DE',
                  fillOpacity: .5,
                  radius: getRadius(feature.properties.Value)
+                })
             });
-       }),
         
         
         /*filter: function(feature,layer){
@@ -233,7 +233,7 @@
         
         //Creates on each feature a popup with some info and a mouseover/mouseout function to highligh markers when hovered over by changing opacity.
         
-        onEachFeature: function(feature,layer) {
+        /*onEachFeature: function(feature,layer) {
             layer.bindPopup("<b style='color:#FFFFFF'>" + feature.properties.Country);
             layer.on('mouseover', function() {
                 layer.setOpacity(0.3)
@@ -241,7 +241,7 @@
             layer.on('mouseout', function() {
                 layer.setOpacity(0.6)
             });
-        }
+        }*/
         }
     });
         
@@ -260,19 +260,19 @@
                 //divIcon lets the markers be defined by the CSS properties above. Useful for using CSS styling & animations. className refers to the CSS class where the style is defined. Other variables defined here (iconSize) take effect after animations complete.
                 
                 icon: L.circleMarker(latlng, {
-                 color: '#B687DE',
+                 color: '#bbcfde',
                  weight: 1,
-                 fillColor: '#B687DE',
+                 fillColor: '##bbcfde',
                  fillOpacity: .5,
                  radius: getRadius(feature.properties.value)
-            });
-       }),
+            })
+       });
         /*
         filter: function(feature,layer){
             if(feature.properties == "IOM_med_tot_percentage"){
                 return feature;
             }
-        },*/
+        },
         onEachFeature: function(feature,layer) {
             layer.bindPopup( "<b style='color:#BF0A30'>" + feature.properties.destination);
             layer.on('mouseover', function() {
@@ -281,7 +281,7 @@
             layer.on('mouseout', function() {
                 layer.setOpacity(0.6);
             });
-        },    
+        },  */  
     }});
     migrationTimeline.addTo(map);
         
