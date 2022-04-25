@@ -1,6 +1,6 @@
-var urb = {
-  "type": "FeatureCollection",
-  "features": [
+{
+"type": "FeatureCollection",
+"features": [
 { "type": "Feature", "properties": { "Country": "Algeria", "Year": 1990, "Value": 53.7, "Longitude": 3.0, "Latitude": 28.0 }, "geometry": { "type": "Point", "coordinates": [ 3.0, 28.0 ] } },
 { "type": "Feature", "properties": { "Country": "Algeria", "Year": 1995, "Value": 57.5, "Longitude": 3.0, "Latitude": 28.0 }, "geometry": { "type": "Point", "coordinates": [ 3.0, 28.0 ] } },
 { "type": "Feature", "properties": { "Country": "Algeria", "Year": 2000, "Value": 61.5, "Longitude": 3.0, "Latitude": 28.0 }, "geometry": { "type": "Point", "coordinates": [ 3.0, 28.0 ] } },
